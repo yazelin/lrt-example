@@ -1,0 +1,229 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>輕軌路線圖範例</title>
+		<style>
+			.station-no,.station-name{
+				
+			}
+			body{
+				background-color:#eee;
+			}
+			#content{
+				border: 0px solid #000;
+				position:relative;
+				width:480px;
+				margin:0 auto;
+				padding:0;
+			}
+			.station-div{
+				border: 0px solid #000;
+				position:relative;
+				background-color:#eee;
+				border-left:20px solid #4a4;
+				height:100px;			
+			}
+			.station-point{
+				border: 0px solid #000;
+				margin-left:-47px;
+				position:relative;
+			    border: 2px solid #FFF;
+				background: #4a4;
+				border-radius: 35px;
+				width:70px;
+				height:70px;
+				line-height:70px;
+			}
+			.station-no{
+				border: 0px solid #000;
+				margin:auto;
+				position:absolute;
+				background: #FFF;
+				border-radius: 25px;
+				width:50px;
+				height:50px;
+				line-height:50px;
+				font-size:30px;				
+				top:0; bottom:0; left:0; right:0;
+				text-align: center;
+			}
+			.station-name{
+				border: 0px solid #000;
+				margin:auto;
+				position:absolute;				
+				top:0; left:0; right:0;
+				width:340px;
+				height:70px;
+				line-height:70px;
+				font-size:40px;
+				text-align:center;
+			}
+			.station-branch-div{
+				border: 0px solid #000;
+				border-top: 20px solid #a44;
+				position:absolute;
+				top:25px;
+				left:-260px;
+				width:200px;
+			}
+			.station-branch-point{
+				border: 0px solid #000;
+				position:absolute;
+				top:-45px;
+				right:-5px;				
+			    border: 2px solid #FFF;
+				background: #a44;
+				border-radius: 35px;
+				width:70px;
+				height:70px;
+				line-height:70px;				
+			}
+			.station-branch-no{			
+				border: 0px solid #000;
+				margin:auto;
+				position:absolute;
+				background: #FFF;
+				border-radius: 25px;
+				width:50px;
+				height:50px;
+				line-height:50px;
+				font-size:30px;				
+				top:0; bottom:0; left:0; right:0;
+				text-align: center;
+			}
+			.station-branch-name{			
+				border: 0px solid #000;
+				margin:auto;
+				width:340px;
+				height:70px;
+				line-height:70px;
+				font-size:40px;
+			}
+			.back-btn{
+				border: 1px solid #000;
+				position:absolute;				
+				right:0; top:0;
+				width:100px;
+				height:100px;
+				z-index:99;
+			}
+			@media (max-width:530px) {
+				#content{
+					width:280px;
+				}
+				.station-div{
+					border-left:10px solid #4a4;
+					height:50px;				
+				}
+				.station-point{
+					margin-left:-27px;
+					border-radius: 20px;
+					width:40px;
+					height:40px;
+					line-height:40px;
+				}
+				.station-no{
+					border-radius: 15px;
+					width:30px;
+					height:30px;
+					line-height:30px;
+					font-size:18px;
+				}
+				.station-name{
+					width:200px;
+					height:40px;
+					line-height:40px;
+					font-size:20px;
+				}
+				.station-branch-div{
+					border: 0px solid #000;
+					border-top: 10px solid #a44;
+					position:absolute;
+					top:16px;
+					left:-135px;
+					width:100px;
+				}
+				.station-branch-point{
+					top:-25px;
+					border-radius: 20px;
+					width:40px;
+					height:40px;
+					line-height:40px;				
+				}
+				.station-branch-no{
+					border-radius: 25px;
+					width:30px;
+					height:30px;
+					line-height:30px;
+					font-size:18px;				
+					top:0; bottom:0; left:0; right:0;
+					text-align: center;
+				}
+				.station-branch-name{
+					height:40px;
+					line-height:40px;
+					font-size:20px;
+				}
+				
+				.back-btn{
+					width:50px;
+					height:50px;
+				}
+				
+				
+			}
+		</style>
+	</head>
+	<body>
+
+		<div id="content">
+			<div class="back-btn">Back</div>
+			<div class="station-div station-div-first">
+				<div class="station-point">
+					<div class="station-no">C1</div>
+				</div>
+				<div class="station-name">C1站名</div>
+			</div>
+			
+			<div class="station-div">				
+				<div class="station-point">
+					<div class="station-no">C2</div>
+				</div>
+				<div class="station-name">C2站名</div>
+			</div>
+			<div class="station-div">
+				<div class="station-branch-div">
+					<div class="station-branch-point">
+						<div class="station-branch-no">R6</div>
+					</div>
+					<div class="station-branch-name">R6站名</div>
+				</div>				
+				<div class="station-point">
+					<div class="station-no">C3</div>
+				</div>
+				<div class="station-name">C3站名</div>
+			</div>
+			
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">...</div>
+			</div>
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">C13</div>
+				</div>
+				<div class="station-name">C13站名</div>
+			</div>
+
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">C14</div>
+				</div>
+				<div class="station-name">C14站名</div>
+			</div>
+		</div>
+
+	</body>
+</html>
