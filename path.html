@@ -1,13 +1,22 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/> 
+
 		<title>輕軌路線圖範例</title>
 		<style>
 			.station-no,.station-name{
-				/*font-family:Arial*/	
-			}
+				
+				/*font-family:Arial,標楷體;*/
+					
+			}			
 			body{
 				background-color:#eee;
+			}
+			#content a{
+				text-decoration: none;
+				color:#333;
+				font-weight:900;
 			}
 			#content{
 				border: 0px solid #000;
@@ -17,14 +26,11 @@
 				padding:0;
 			}
 			.station-div{
-				border: 0px solid #000;
 				position:relative;
-				background-color:#eee;
 				border-left:20px solid #4a4;
 				height:100px;			
 			}
 			.station-point{
-				border: 0px solid #000;
 				margin-left:-47px;
 				position:relative;
 			    border: 2px solid #FFF;
@@ -32,9 +38,8 @@
 				border-radius: 35px;
 				width:70px;
 				height:70px;
-				line-height:70px;
 			}
-			.station-no{
+			.station-no,.station-branch-no{
 				border: 0px solid #000;
 				margin:auto;
 				position:absolute;
@@ -43,15 +48,16 @@
 				width:50px;
 				height:50px;
 				line-height:50px;
-				font-size:30px;				
+				font-size:30px;
 				top:0; bottom:0; left:0; right:0;
 				text-align: center;
+				font-weight:900;
 			}
 			.station-name{
 				border: 0px solid #000;
 				margin:auto;
 				position:absolute;				
-				top:0; left:0; right:0;
+				top:0; left:0; right:0; 
 				width:340px;
 				height:70px;
 				line-height:70px;
@@ -78,20 +84,7 @@
 				height:70px;
 				line-height:70px;				
 			}
-			.station-branch-no{			
-				border: 0px solid #000;
-				margin:auto;
-				position:absolute;
-				background: #FFF;
-				border-radius: 25px;
-				width:50px;
-				height:50px;
-				line-height:50px;
-				font-size:30px;				
-				top:0; bottom:0; left:0; right:0;
-				text-align: center;
-			}
-			.station-branch-name{			
+			.station-branch-name{
 				border: 0px solid #000;
 				margin:auto;
 				width:340px;
@@ -107,7 +100,7 @@
 				height:100px;
 				z-index:99;
 			}
-			@media (max-width:530px) {
+			@media screen and (max-width: 530px)  {
 				#content{
 					width:280px;
 				}
@@ -182,12 +175,16 @@
 				<div class="station-point">
 					<div class="station-no">C1</div>
 				</div>
-				<div class="station-name">C1站名</div>
+				<div class="station-name">
+					<a href="http://www.google.com.tw">C1站名</a>
+				</div>
 			</div>
 			
 			<div class="station-div">				
 				<div class="station-point">
-					<div class="station-no">C2</div>
+					<div class="station-no">
+						<a href="javascript:window.open('http://www.google.com','_self');">C2</a>
+					</div>
 				</div>
 				<div class="station-name">C2站名</div>
 			</div>
@@ -204,6 +201,54 @@
 				<div class="station-name">C3站名</div>
 			</div>
 			
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">站名站名站名</div>
+			</div>
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">...</div>
+			</div>
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">...</div>
+			</div>
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">...</div>
+			</div>
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">...</div>
+			</div>
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">...</div>
+			</div>
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">...</div>
+			</div>
+			<div class="station-div">
+				<div class="station-point">
+					<div class="station-no">...</div>
+				</div>
+				<div class="station-name">...</div>
+			</div>
 			<div class="station-div">
 				<div class="station-point">
 					<div class="station-no">...</div>
