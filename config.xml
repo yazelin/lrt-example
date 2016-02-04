@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<widget xmlns="http://www.w3.org/ns/widgets" 
+	xmlns:gap="http://phonegap.com/ns/1.0" 
+	id="edu.usc.lrtexammple" 
+	version="1.0.0">
+	
+    <name>
+        lrtexammple
+    </name>
+        <description>
+        An example of inAppBrowser Plugin. and google map 
+    </description>
+
+    <author href="http://www.yaze.tw" email="yaze.lin.j303@gmail.com">
+        Yourname
+    </author>
+    
+    <preference name="phonegap-version" value="3.0.0" />
+    
+    <gap:plugin name="org.apache.cordova.inappbrowser" />    
+	
+    <access origin="*" />
+ 
+</widget>
